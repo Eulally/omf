@@ -1,0 +1,53 @@
+body {
+	margin: 0rem;
+	padding: 0rem;
+}
+/*--COMMUN--*/
+header, .grid__menu, #home section, .zoom, .prochainement, footer{
+	display: flex;
+}
+header, #home section, footer {
+	text-align: center;
+}
+header, .prochainement p, footer {
+	/*background-color: green;
+	color: yellow;*/
+	align-items: center;
+}
+h1, .prochainement p{
+	margin: auto;
+}
+.grid__menu{
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 2.5rem 26rem;
+}
+#home section{
+	height: 26rem;
+	width: 19rem;
+	/*background-color: pink;*/
+}
+.zoom {
+	flex-direction: column;
+	margin: auto;
+}
+/*--SPE--*/
+header {
+	padding: 2.5rem;
+}
+.prochainement {
+}
+.prochainement p {
+	padding: 1.5rem;
+	border-radius: 1rem;
+}
+
+footer {
+	justify-content: space-between;
+	padding: 1.1rem 3.5rem;
+	margin-top: 2rem;
+
+}
+footer a{
+
+}
