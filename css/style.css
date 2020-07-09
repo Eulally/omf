@@ -1,6 +1,6 @@
 :root{
-	--background-color : rgba(87, 156, 135, 1);
-	--text-color :rgba(253, 203, 70, 1);
+	--background-color : rgb(87, 156, 135);
+	--text-color :rgb(255, 206, 0);
 	--text-font : "Helvetica";
 }
 
@@ -15,14 +15,14 @@ header, .grid__menu, #home section, .zoom, .prochainement, footer{
 header, #home section, footer {
 	text-align: center;
 }
-header, .prochainement p, footer {
+header, .prochainement p, footer, header a {
 	background-color: var(--background-color);
 	color: var(--text-color);
 	align-items: center;
 	font-family: var(--text-font)
 
 }
-h1, .prochainement p{
+h1, .prochainement p, header a{
 	margin: auto;
 }
 a {
@@ -36,7 +36,7 @@ a {
 #home section{
 	height: 26rem;
 	width: 19rem;
-	background-color: pink;
+	box-shadow: 0px 0px 10px lightgrey;
 }
 .grid__menu--note, .grid__menu--delice {
 	margin-right: 1.2rem;
@@ -49,7 +49,10 @@ a {
 	margin: auto;
 }
 /*--SPE--*/
-header {
+main {
+	margin-bottom: 100px;
+}
+header{
 	padding: 1.5rem;
 	font-size: 2rem;
 }
@@ -57,9 +60,20 @@ header {
 	padding: 0.5rem 2.5rem;
 	border-radius: 0.5rem;
 	font-size: 1.5rem;
-	/*font-weight: 300;*/
+	letter-spacing: 1px;
 }
-
+.grid__menu--note {
+	background-color: #FCDFDB;
+}
+.grid__menu--chic {
+	background-color: #FFF5FE;
+}
+.grid__menu--delice {
+	background-color: #EDEFEF;
+}
+.grid__menu--palette {
+	background-color: #FDFFFD;
+}
 footer {
 	justify-content: space-between;
 	padding: 1.1rem 0rem;
