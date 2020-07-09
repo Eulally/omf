@@ -25,6 +25,9 @@ header, .prochainement p, footer {
 h1, .prochainement p{
 	margin: auto;
 }
+a {
+	text-decoration: none;
+}
 .grid__menu{
 	flex-direction: row;
 	justify-content: center;
@@ -59,12 +62,15 @@ header {
 
 footer {
 	justify-content: space-between;
-	padding: 1.1rem 1.5rem;
+	padding: 1.1rem 0rem;
 	margin-top: 2rem;
 	font-size: 1.1rem;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 
 }
 footer a{
-	text-decoration: none;
 	color: var(--text-color);
+	padding: 0rem 2rem;
 }
