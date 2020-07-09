@@ -1,3 +1,9 @@
+:root{
+	--background-color : rgba(87, 156, 135, 1);
+	--text-color :rgba(253, 203, 70, 1);
+	--text-font : "Helvetica";
+}
+
 body {
 	margin: 0rem;
 	padding: 0rem;
@@ -10,22 +16,30 @@ header, #home section, footer {
 	text-align: center;
 }
 header, .prochainement p, footer {
-	/*background-color: green;
-	color: yellow;*/
+	background-color: var(--background-color);
+	color: var(--text-color);
 	align-items: center;
+	font-family: var(--text-font)
+
 }
 h1, .prochainement p{
 	margin: auto;
 }
 .grid__menu{
 	flex-direction: row;
-	justify-content: space-around;
-	margin: 2.5rem 26rem;
+	justify-content: center;
+	margin: 2.5rem 10rem;
 }
 #home section{
 	height: 26rem;
 	width: 19rem;
-	/*background-color: pink;*/
+	background-color: pink;
+}
+.grid__menu--note, .grid__menu--delice {
+	margin-right: 1.2rem;
+}
+.grid__menu--chic, .grid__menu--palette{
+	margin-left: 1.2rem;
 }
 .zoom {
 	flex-direction: column;
@@ -33,21 +47,24 @@ h1, .prochainement p{
 }
 /*--SPE--*/
 header {
-	padding: 2.5rem;
-}
-.prochainement {
+	padding: 1.5rem;
+	font-size: 2rem;
 }
 .prochainement p {
-	padding: 1.5rem;
-	border-radius: 1rem;
+	padding: 0.5rem 2.5rem;
+	border-radius: 0.5rem;
+	font-size: 1.5rem;
+	/*font-weight: 300;*/
 }
 
 footer {
 	justify-content: space-between;
-	padding: 1.1rem 3.5rem;
+	padding: 1.1rem 1.5rem;
 	margin-top: 2rem;
+	font-size: 1.1rem;
 
 }
 footer a{
-
+	text-decoration: none;
+	color: var(--text-color);
 }
