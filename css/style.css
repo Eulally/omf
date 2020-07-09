@@ -19,11 +19,13 @@ header, .prochainement p, footer, header a {
 	background-color: var(--background-color);
 	color: var(--text-color);
 	align-items: center;
-	font-family: var(--text-font)
-
 }
 h1, .prochainement p, header a{
 	margin: auto;
+}
+.prochainement p, footer a {
+	/*letter-spacing: 1px;*/
+	font-family: "stem";
 }
 a {
 	text-decoration: none;
@@ -55,24 +57,46 @@ main {
 header{
 	padding: 1.5rem;
 	font-size: 2rem;
+	font-family: "helvetica";
 }
 .prochainement p {
 	padding: 0.5rem 2.5rem;
 	border-radius: 0.5rem;
 	font-size: 1.5rem;
-	letter-spacing: 1px;
 }
 .grid__menu--note {
 	background-color: #FCDFDB;
 }
+.grid__menu--note h2{
+	font-family: "devonshire";
+}
+.grid__menu--note {
+	font-weight: 900;
+}
 .grid__menu--chic {
 	background-color: #FFF5FE;
+}
+.grid__menu--chic h2{
+	font-family: "croissantone";
+	font-weight: 100;
+}
+h3 {
+	font-family: "segoe";
+}
+.grid__menu--chic h3{
+	font-family: "pax2b";
 }
 .grid__menu--delice {
 	background-color: #EDEFEF;
 }
+.grid__menu--delice h2{
+	font-family: "dancingscript";
+}
 .grid__menu--palette {
 	background-color: #FDFFFD;
+}
+.grid__menu--palette h2{
+	font-family: "kaushanscript"
 }
 footer {
 	justify-content: space-between;
@@ -87,4 +111,64 @@ footer {
 footer a{
 	color: var(--text-color);
 	padding: 0rem 2rem;
+}
+
+@font-face {
+	font-family: "devonshire";
+	src:url("../font/devonshire.ttf") format("truetype"),
+	url("../font/devonshire.eot") format("eot"),
+	url("../font/devonshire.woff") format("woff"),
+	url("../font/devonshire.otf") format("opentype"),
+	url("../font/devonshire.svg") format("svg");
+}
+
+@font-face {
+	font-family: "segoe";
+	src:url("../font/segoe.ttf") format("truetype"),
+	url("../font/segoe.eot") format("eot"),
+	url("../font/segoe.woff") format("woff"),
+	url("../font/segoe.otf") format("opentype"),
+	url("../font/segoe.svg") format("svg");
+
+}
+@font-face {
+	font-family: "stem";
+	src:url("../font/stem.ttf") format("truetype"),
+	url("../font/stem.eot") format("eot"),
+	url("../font/stem.woff") format("woff"),
+	url("../font/stem.otf") format("opentype"),
+	url("../font/stem.svg") format("svg");
+
+}
+@font-face {
+	font-family: "croissantone";
+	src:url("../font/croissantone.ttf") format("truetype"),
+	url("../font/croissantone.eot") format("eot"),
+	url("../font/croissantone.woff") format("woff"),
+	url("../font/croissantone.otf") format("opentype"),
+	url("../font/croissantone.svg") format("svg");
+}
+@font-face {
+	font-family: "dancingscript";
+	src:url("../font/dancingscript.ttf") format("truetype"),
+	url("../font/dancingscript.eot") format("eot"),
+	url("../font/dancingscript.woff") format("woff"),
+	url("../font/dancingscript.otf") format("opentype"),
+	url("../font/dancingscript.svg") format("svg");
+}
+@font-face {
+	font-family: "kaushanscript";
+	src:url("../font/kaushanscript.ttf") format("truetype"),
+	url("../font/kaushanscript.eot") format("eot"),
+	url("../font/kaushanscript.woff") format("woff"),
+	url("../font/kaushanscript.otf") format("opentype"),
+	url("../font/kaushanscript.svg") format("svg");
+}
+@font-face {
+	font-family: "pax2b";
+	src:url("../font/pax2b.ttf") format("truetype"),
+	url("../font/pax2b.eot") format("eot"),
+	url("../font/pax2b.woff") format("woff"),
+	url("../font/pax2b.otf") format("opentype"),
+	url("../font/pax2b.svg") format("svg");
 }
