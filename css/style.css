@@ -39,6 +39,7 @@ a {
 	height: 26rem;
 	width: 19rem;
 	box-shadow: 0px 0px 10px lightgrey;
+	justify-content: center;
 }
 .grid__menu--note, .grid__menu--delice {
 	margin-right: 1.2rem;
@@ -48,7 +49,8 @@ a {
 }
 .zoom {
 	flex-direction: column;
-	margin: auto;
+	justify-content: center;
+	align-items: center;
 }
 /*--SPE--*/
 main {
@@ -64,39 +66,72 @@ header{
 	border-radius: 0.5rem;
 	font-size: 1.5rem;
 }
+i {
+	font-size: 2rem;
+	background: -webkit-gradient(linear, left top, right bottom, from(rgb(241,88,97)), to(rgb(247,143,106)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .grid__menu--note {
 	background-color: #FCDFDB;
 }
 .grid__menu--note h2{
 	font-family: "devonshire";
+	font-size: 1.8rem;
+	color: rgb(60,18,24);
 }
-.grid__menu--note {
-	font-weight: 900;
+.grid__menu--note h3{
+	color: rgb(60,18,24);
 }
 .grid__menu--chic {
 	background-color: #FFF5FE;
 }
 .grid__menu--chic h2{
 	font-family: "croissantone";
-	font-weight: 100;
+	font-size: 1.2rem;
+	letter-spacing: 0;
+	font-weight: 650;
+	background: -webkit-gradient(linear, left top, right bottom, from(rgb(216,133,46)), to(rgb(144,91,253)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h2{
+	margin: 0rem;
 }
 h3 {
 	font-family: "segoe";
+	font-size: 2rem;
+	margin: 0rem;
 }
 .grid__menu--chic h3{
 	font-family: "pax2b";
+	color: rgb(199,116,18);
 }
 .grid__menu--delice {
 	background-color: #EDEFEF;
 }
 .grid__menu--delice h2{
 	font-family: "dancingscript";
+	font-size: 1.5rem;
+	background: -webkit-gradient(linear, left top, right bottom, from(rgb(4,49,223)), to(rgb(8,135,251)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.grid__menu--delice h3{
+	color: rgb(8,135,251);
 }
 .grid__menu--palette {
 	background-color: #FDFFFD;
 }
 .grid__menu--palette h2{
-	font-family: "kaushanscript"
+	font-family: "kaushanscript";
+	font-size: 1.5rem;
+	background: -webkit-gradient(linear, left top, right bottom, from(rgb(66,151,60)), to(rgb(191,255,126)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.grid__menu--palette h3{
+	color: rgb(114,191,86);
 }
 footer {
 	justify-content: space-between;
