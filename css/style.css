@@ -8,8 +8,9 @@ body {
 	margin: 0rem;
 	padding: 0rem;
 }
-/*--COMMUN--*/
-header, .grid__menu, #home section, .zoom, .prochainement, footer{
+
+/*--HOME--*/
+header, .grid, #home section, .zoom, .prochainement, footer{
 	display: flex;
 }
 header, #home section, footer {
@@ -24,115 +25,24 @@ h1, .prochainement p, header a{
 	margin: auto;
 }
 .prochainement p, footer a {
-	/*letter-spacing: 1px;*/
 	font-family: "stem";
 }
 a {
 	text-decoration: none;
-}
-.grid__menu{
-	flex-direction: row;
-	justify-content: center;
-	margin: 2.5rem 10rem;
-}
-#home section{
-	height: 26rem;
-	width: 19rem;
-	box-shadow: 0px 0px 10px lightgrey;
-	justify-content: center;
-}
-.grid__menu--note, .grid__menu--delice {
-	margin-right: 1.2rem;
-}
-.grid__menu--chic, .grid__menu--palette{
-	margin-left: 1.2rem;
-}
-.zoom {
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-/*--SPE--*/
-main {
-	margin-bottom: 100px;
-}
-header{
-	padding: 1.5rem;
-	font-size: 2rem;
-	font-family: "helvetica";
 }
 .prochainement p {
 	padding: 0.5rem 2.5rem;
 	border-radius: 0.5rem;
 	font-size: 1.5rem;
 }
-i {
+
+	/*--FIX--*/
+header{
+	padding: 1.5rem;
 	font-size: 2rem;
-	background: -webkit-gradient(linear, left top, right bottom, from(rgb(241,88,97)), to(rgb(247,143,106)));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+	font-family: "helvetica";
 }
-.grid__menu--note {
-	background-color: #FCDFDB;
-}
-.grid__menu--note h2{
-	font-family: "devonshire";
-	font-size: 1.8rem;
-	color: rgb(60,18,24);
-}
-.grid__menu--note h3{
-	color: rgb(60,18,24);
-}
-.grid__menu--chic {
-	background-color: #FFF5FE;
-}
-.grid__menu--chic h2{
-	font-family: "croissantone";
-	font-size: 1.2rem;
-	letter-spacing: 0;
-	font-weight: 650;
-	background: -webkit-gradient(linear, left top, right bottom, from(rgb(216,133,46)), to(rgb(144,91,253)));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-h2{
-	margin: 0rem;
-}
-h3 {
-	font-family: "segoe";
-	font-size: 2rem;
-	margin: 0rem;
-}
-.grid__menu--chic h3{
-	font-family: "pax2b";
-	color: rgb(199,116,18);
-}
-.grid__menu--delice {
-	background-color: #EDEFEF;
-}
-.grid__menu--delice h2{
-	font-family: "dancingscript";
-	font-size: 1.5rem;
-	background: -webkit-gradient(linear, left top, right bottom, from(rgb(4,49,223)), to(rgb(8,135,251)));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.grid__menu--delice h3{
-	color: rgb(8,135,251);
-}
-.grid__menu--palette {
-	background-color: #FDFFFD;
-}
-.grid__menu--palette h2{
-	font-family: "kaushanscript";
-	font-size: 1.5rem;
-	background: -webkit-gradient(linear, left top, right bottom, from(rgb(66,151,60)), to(rgb(191,255,126)));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.grid__menu--palette h3{
-	color: rgb(114,191,86);
-}
+
 footer {
 	justify-content: space-between;
 	padding: 1.1rem 0rem;
@@ -148,40 +58,159 @@ footer a{
 	padding: 0rem 2rem;
 }
 
-/*MENU*/
+	/*--MENUS--*/
+main {
+	margin-bottom: 100px;
+}
+h2{
+	margin: 0rem;
+}
+h3 {
+	font-family: "segoe";
+	font-size: 2rem;
+	margin: 0rem;
+}
+.grid{
+	flex-direction: row;
+	justify-content: center;
+	margin: 2.5rem 10rem;
+}
+#home section{
+	height: 26rem;
+	width: 19rem;
+	box-shadow: 0px 0px 10px lightgrey;
+	justify-content: center;
+	cursor: pointer;
+}
+.menu_note, .menu_delice {
+	margin-right: 1.2rem;
+}
+.menu_chic, .menu_palette{
+	margin-left: 1.2rem;
+}
+.zoom {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+		/*--NOTE--*/
+i {
+	font-size: 2rem;
+	background: -webkit-gradient(linear, left top, right bottom, from(rgb(241,88,97)), to(rgb(247,143,106)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.menu_note {
+	background-color: #FCDFDB;
+}
+.menu_note h2{
+	font-family: "devonshire";
+	font-size: 1.8rem;
+	color: rgb(60,18,24);
+}
+.menu_note h3{
+	color: rgb(60,18,24);
+}
+		/*--CHIC--*/
+.menu_chic {
+	background-color: #FFF5FE;
+}
+.menu_chic h2{
+	font-family: "croissantone";
+	font-size: 1.2rem;
+	letter-spacing: 0;
+	font-weight: 650;
+	background: -webkit-gradient(linear, left top, right bottom, from(rgb(216,133,46)), to(rgb(144,91,253)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.menu_chic h3{
+	font-family: "pax2b";
+	color: rgb(199,116,18);
+}
+		/*--DELICE--*/
+.menu_delice {
+	background-color: #EDEFEF;
+}
+.menu_delice h2{
+	font-family: "dancingscript";
+	font-size: 1.5rem;
+	background: -webkit-gradient(linear, left top, right bottom, from(rgb(4,49,223)), to(rgb(8,135,251)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.menu_delice h3{
+	color: rgb(8,135,251);
+}
+		/*--PALETTE--*/
+.menu_palette {
+	background-color: #FDFFFD;
+}
+.menu_palette h2{
+	font-family: "kaushanscript";
+	font-size: 1.5rem;
+	background: -webkit-gradient(linear, left top, right bottom, from(rgb(66,151,60)), to(rgb(191,255,126)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.menu_palette h3{
+	color: rgb(114,191,86);
+}
+
+/*MENUS*/
+#note h2, #chic h2, #delice h2, #palette h2, .restaurant__start, .restaurant__end{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.menu{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: auto;
+	background-color: ;
+	box-shadow: 0px 0px 10px lightgrey;
+	width: 50rem;
+	padding: 3rem 8rem;
+	font-family: ;
+}
+.restaurant__start{
+	flex-direction: column;
+	font-size: 2rem;
+	padding-bottom: 1rem;
+}
+.menu__intitule {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2.5rem 0rem 1rem 0rem;
+}
+.menu__details {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 0.9rem;
+	line-height: 0.5rem;
+}
+.details_prix {
+	font-size: 1rem;
+}
   /*NOTE*/
 .first {
 	font-family: "Helvetica";
 	font-size: 1.8rem;
 	margin: 1.8rem 0rem 1rem 0rem;
 }
-#note .menu {
-	overflow: hidden;
-}
-#note h2, .restaurant__start, .restaurant__end{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-#note section {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	margin: auto;
+#note .menu{
 	background-color: #FCDFDB;
-	box-shadow: 0px 0px 10px lightgrey;
-	width: 50rem;
-	padding: 3rem 8rem;
 	font-family: "segoe";
 }
-.restaurant__start, .restaurant__end {
+#note .restaurant__start, .restaurant__end {
 	font-family: "devonshire";
 	color: rgb(60,18,24);
-}
-.restaurant__start{
-	flex-direction: column;
-	font-size: 2rem;
-	padding-bottom: 1rem;
 }
 .restaurant__start i {
 	font-size: 4rem;
@@ -193,22 +222,14 @@ footer a{
 	font-size: 1.2rem;
 	padding-top: 2rem;
 }
-.menu__intitule {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	padding: 2.5rem 0rem 1rem 0rem;
-}
-.menu__intitule h3 {
-	font-size: 1.8rem;
+
+#note h3 {
+	font-size: 1.5rem;
+	background: linear-gradient(to top, rgb(60,18,24)0%, rgb(60,18,24)8%, transparent 5px);
 }
 img {
 	width: 18rem;
 	height: 0.5rem;
-}
-.menu {
-	padding: 1rem 0rem;
 }
 .menu__details {
 	display: flex;
@@ -217,7 +238,7 @@ img {
 	font-size: 0.9rem;
 	line-height: 0.5rem;
 }
-.menu__details--prix {
+.details_prix {
 	font-size: 1rem;
 }
 @font-face {
