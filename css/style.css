@@ -92,9 +92,8 @@ h2{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
 }
-
+        
 		/*--NOTE--*/
 i {
 	font-size: 2rem;
@@ -137,6 +136,7 @@ i {
 .menu_delice h2, #delice .restaurant_start{
 	font-family: "dancingscript";
 	font-size: 1.5rem;
+	padding: 0rem 0.2rem;
 	background: -webkit-gradient(linear, left top, right bottom, from(rgb(4,49,223)), to(rgb(8,135,251)));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -151,6 +151,7 @@ i {
 .menu_palette h2, #palette .restaurant_start{
 	font-family: "kaushanscript";
 	font-size: 1.5rem;
+	padding: 0rem 0.2rem;
 	background: -webkit-gradient(linear, left top, right bottom, from(rgb(66,151,60)), to(rgb(191,255,126)));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
