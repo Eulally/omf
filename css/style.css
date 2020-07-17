@@ -116,7 +116,7 @@ i {
 .menu_chic, #chic .menu {
 	background-color: #FFF5FE;
 }
-.menu_chic h2, #chic .restaurant_start{
+.menu_chic h2, #chic .restaurant_start h2{
 	font-family: "croissantone";
 	font-size: 1.2rem;
 	letter-spacing: 0;
