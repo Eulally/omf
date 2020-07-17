@@ -116,11 +116,10 @@ i {
 .menu_chic, #chic .menu {
 	background-color: #FFF5FE;
 }
-.menu_chic h2, #chic .restaurant_start h2{
+.menu_chic h2, #chic .restaurant_start p{
 	font-family: "croissantone";
 	font-size: 1.2rem;
 	letter-spacing: 0;
-	font-weight: 650;
 	background: -webkit-gradient(linear, left top, right bottom, from(rgb(216,133,46)), to(rgb(144,91,253)));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -208,7 +207,6 @@ i {
 	font-size: 1rem;
 }
   /*NOTE*/
-}
 #note .menu {
 	padding: 0rem 8rem;
 }
