@@ -1,9 +1,3 @@
-:root{
-	--background-color : rgb(87, 156, 135);
-	--text-color :rgb(255, 206, 0);
-	--text-font : "Helvetica";
-}
-
 body {
 	margin: 0rem;
 	padding: 0rem;
@@ -16,24 +10,32 @@ header, .grid, #home section, .zoom, .prochainement, footer{
 header, #home section, footer {
 	text-align: center;
 }
-header, .prochainement p, footer, header a {
-	background-color: var(--background-color);
-	color: var(--text-color);
+header, .prochainement /*p*/, footer, header a {
+	background-color: rgb(87, 156, 135);
+	color: rgb(255, 206, 0);
 	align-items: center;
 }
-h1, .prochainement p, header a{
+.grid, .prochainement{
+	flex-direction: row;
+}
+h1, .prochainement /*p*/, header a{
 	margin: auto;
 }
-.prochainement p, footer a {
+.prochainement, footer a {
 	font-family: "stem";
+}
+.prochainement /*p*/{
+	width: 15rem;
+	justify-content: center;
+	padding: 0.5rem 2.5rem;
+	border-radius: 0.5rem;
+	font-size: 1.5rem;
 }
 a {
 	text-decoration: none;
 }
-.prochainement p {
-	padding: 0.5rem 2.5rem;
-	border-radius: 0.5rem;
-	font-size: 1.5rem;
+span {
+	font-size: 3rem;
 }
 
 	/*--FIX--*/
@@ -54,10 +56,9 @@ footer {
 
 }
 footer a{
-	color: var(--text-color);
+	color: rgb(255, 206, 0);
 	padding: 0rem 2rem;
 }
-
 	/*--MENUS--*/
 main {
 	margin-bottom: 100px;
@@ -67,20 +68,20 @@ h2{
 }
 #home h3, .menu {
 	font-family: "segoe";
-	font-size: 2rem;
 	margin: 0rem;
 }
 .grid{
-	flex-direction: row;
 	justify-content: center;
 	margin: 2.5rem 10rem;
 }
 #home section{
+	font-size: 1.2rem;
 	height: 26rem;
 	width: 19rem;
 	box-shadow: 0px 0px 10px lightgrey;
 	justify-content: center;
 	cursor: pointer;
+	transition: font-size 2s;
 }
 .menu_note, .menu_delice {
 	margin-right: 1.2rem;
@@ -96,7 +97,7 @@ h2{
         
 		/*--NOTE--*/
 i {
-	font-size: 2rem;
+	font-size: 1.8rem;
 	background: -webkit-gradient(linear, left top, right bottom, from(rgb(241,88,97)), to(rgb(247,143,106)));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -104,10 +105,11 @@ i {
 .menu_note, #note .menu {
 	background-color: #FCDFDB;
 }
-.menu_note h2, #note .restaurant_start, #note .restaurant_end{
+.menu_note h2, #note .restaurant_start h2, #note .restaurant_end h2{
 	font-family: "devonshire";
-	font-size: 1.8rem;
 	color: rgb(60,18,24);
+	transition-property: zoom;
+	transition-duration: 5s;
 }
 .menu_note h3{
 	color: rgb(60,18,24);
@@ -116,25 +118,23 @@ i {
 .menu_chic, #chic .menu {
 	background-color: #FFF5FE;
 }
-.menu_chic h2, #chic .restaurant_start p{
+.menu_chic h2, #chic .restaurant_start h2{
 	font-family: "croissantone";
-	font-size: 1.2rem;
-	letter-spacing: 0;
 	background: -webkit-gradient(linear, left top, right bottom, from(rgb(216,133,46)), to(rgb(144,91,253)));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.menu_chic h3, #chic .menu{
+#home .menu_chic h3, #chic .menu{
 	font-family: "pax2b";
 	color: rgb(199,116,18);
+	padding-top: 0.9rem;
 }
 		/*--DELICE--*/
 .menu_delice, #delice .menu {
 	background-color: #EDEFEF;
 }
-.menu_delice h2, #delice .restaurant_start{
+.menu_delice h2, #delice .restaurant_start h2{
 	font-family: "dancingscript";
-	font-size: 1.5rem;
 	padding: 0rem 0.2rem;
 	background: -webkit-gradient(linear, left top, right bottom, from(rgb(4,49,223)), to(rgb(8,135,251)));
     -webkit-background-clip: text;
@@ -147,9 +147,8 @@ i {
 .menu_palette, #palette .menu {
 	background-color: #FDFFFD;
 }
-.menu_palette h2, #palette .restaurant_start{
+.menu_palette h2, #palette .restaurant_start h2{
 	font-family: "kaushanscript";
-	font-size: 1.5rem;
 	padding: 0rem 0.2rem;
 	background: -webkit-gradient(linear, left top, right bottom, from(rgb(66,151,60)), to(rgb(191,255,126)));
     -webkit-background-clip: text;
@@ -158,34 +157,52 @@ i {
 .menu_palette h3{
 	color: rgb(114,191,86);
 }
+/*HOME ANIMATIONS*/
+
+#home section:hover{
+	font-size :1.5rem;
+	transition: font-size 3s;
+}
+footer a:hover{
+	animation: wiggle 600ms;
+}
+@keyframes wiggle {
+	from{transform:translate(0rem, 0rem);}
+	15%{transform:translate(0.1rem, 0.5rem);}
+	30%{transform:translate(-0.1rem, -0.5rem);}
+	45%{transform:translate(0.1rem, 0.5rem);}
+	60%{transform:translate(-0.1rem, -0.5rem);}
+	75%{transform:translate(0.1rem, 0.5rem);}
+	90%{transform:translate(-0.1rem, -0.5rem);}
+	to{transform:translate(0.1rem,0.5rem); }
+}
 
 /*MENUS*/
-.first {
-	font-family: "Helvetica";
+.intro {
 	font-size: 1.8rem;
+	font-family: "Helvetica";
 	margin: 1.8rem 0rem 1rem 0rem;
 }
-#note h2, #chic h2, #delice h2, #palette h2, .restaurant_start, .restaurant_end{
+.intro, #note h2, #chic h2, #delice h2, #palette h2, .restaurant_start h2, .restaurant_end{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 .menu{
+	font-size: 0.9rem;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	margin: auto;
 	box-shadow: 0px 0px 10px lightgrey;
 	width: 50rem;
-	padding: 3rem 8rem;
-	font-size: 0.9rem;
 }
 #chic .menu, #delice .menu, #palette .menu {
 	padding: 6rem 8rem 10rem 8rem;
 }
-.restaurant_start{
-	flex-direction: column;
+.restaurant_start h2{
 	font-size: 2rem;
+	flex-direction: column;
 	padding-bottom: 1rem;
 }
 .menu_intitule {
@@ -196,10 +213,10 @@ i {
 	padding: 2.5rem 0rem 1rem 0rem;
 }
 .menu_details {
+	font-size: 0.9rem;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	font-size: 0.9rem;
 	line-height: 0.5rem;
 	padding: 0rem 6rem;
 }
@@ -208,7 +225,10 @@ i {
 }
   /*NOTE*/
 #note .menu {
-	padding: 0rem 8rem;
+	padding: 3rem 8rem;
+}
+#note .restaurant_start h2{
+	font-size: 3rem;
 }
 .restaurant_start i {
 	font-size: 4rem;
@@ -221,24 +241,24 @@ i {
 }
 #note .menu h3 {
 	font-size: 1.5rem;
-	display:inline-block;
-	background: -webkit-linear-gradient(to top, rgb(60,18,24)0%, rgb(60,18,24)8%, transparent 5px)no-repeat;  
- 	background: -moz-linear-gradient(to top, rgba(61, 19, 25, 0.8)0%, rgba(61, 19, 25, 0.9)8%, transparent 5px)no-repeat;  
- 	background-size: 0% 100%;
- 	transition: background-size 0.8s;
- 	-webkit-transition: background-size 0.8s;
- 	-moz-transition: background-size 0.8s;
+	text-decoration: underline rgb(60,18,24);
 }
+
 img {
 	width: 18rem;
 	height: 0.5rem;
 }
-.restaurant_end {
+.restaurant_end{
+	flex-direction: row;
 	font-size: 1.2rem;
-	padding-top: 2rem;
+	padding-top: 3rem;
+}
+.restaurant_end i {
+	font-size: 2.2rem;
 }
 	/*--CHIC--*/
-#chic .restaurant_start {
+
+#chic .restaurant_start h2{
 	font-size: 1.8rem;
 }
 .one {
@@ -252,16 +272,40 @@ img {
 }
 	/*--DELICE--*/
 
-#delice .restaurant_start {
+#delice .restaurant_start h2{
 	font-size: 3rem;
 }
 /*--PALETTE--*/
-#palette .restaurant_start{
+#palette .restaurant_start h2{
 	font-size: 2.7rem;
 }
 
+/*--ANIMATIONS--*/
+#note .menu h3:hover {
+	text-decoration: underline rgb(60,18,24);
+	animation:line 2s;
+}
+#chic .menu h3:hover{
+	text-decoration: underline rgb(216,133,46);
+	animation: line 2s;
+}
+#delice .menu h3:hover {
+	text-decoration: underline rgb(4,49,223);
+	animation: line 2s;
+}
+#palette .menu h3:hover{
+	text-decoration: underline rgb(66,151,60);
+	background-size: 5rem;
+	transition: background-size 5s;
+}
+#palette .menu h3 {
+}
+@keyframes line{
+	from{text-decoration: 1px;}
+	to{text-decoration: 2px;}
+}
 
-
+/*--FONT--*/
 @font-face {
 	font-family: "devonshire";
 	src:url("../font/devonshire.ttf") format("truetype"),
