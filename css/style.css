@@ -25,7 +25,7 @@ h1, .prochainement, header a{
 	font-family: "stem";
 }
 .prochainement{
-	width: 12rem;
+	width: 15rem;
 	justify-content: center;
 	padding: 0.5rem 2.5rem;
 	border-radius: 0.5rem;
@@ -35,7 +35,7 @@ a {
 	text-decoration: none;
 }
 span {
-	padding-left: 1rem;
+	padding-left: 0.7rem;
 }
 #pt1{
 	animation: point 2s infinite 1s;
@@ -44,7 +44,7 @@ span {
 	animation: point 2s infinite 1.2s;
 }
 #pt3{
-	animation: point 3s infinite 1.4s;
+	animation: point 2s infinite 1.4s;
 }
 @keyframes point {
 	0%{opacity: 0.2;}
@@ -178,7 +178,7 @@ i {
 	transition: font-size 3s;
 }
 footer a:hover{
-	animation: wiggle 600ms;
+	animation: wiggle 400ms;
 }
 @keyframes wiggle {
 	from{transform:translate(0rem, 0rem);}
