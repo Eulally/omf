@@ -10,7 +10,7 @@ header, .grid, #home section, .zoom, .prochainement, footer{
 header, #home section, footer {
 	text-align: center;
 }
-header, .prochainement /*p*/, footer, header a {
+header, .prochainement, footer, header a {
 	background-color: rgb(87, 156, 135);
 	color: rgb(255, 206, 0);
 	align-items: center;
@@ -18,14 +18,14 @@ header, .prochainement /*p*/, footer, header a {
 .grid, .prochainement{
 	flex-direction: row;
 }
-h1, .prochainement /*p*/, header a{
+h1, .prochainement, header a{
 	margin: auto;
 }
 .prochainement, footer a {
 	font-family: "stem";
 }
-.prochainement /*p*/{
-	width: 15rem;
+.prochainement{
+	width: 12rem;
 	justify-content: center;
 	padding: 0.5rem 2.5rem;
 	border-radius: 0.5rem;
@@ -35,9 +35,22 @@ a {
 	text-decoration: none;
 }
 span {
-	font-size: 3rem;
+	padding-left: 1rem;
 }
-
+#pt1{
+	animation: point 2s infinite 1s;
+}
+#pt2{
+	animation: point 2s infinite 1.2s;
+}
+#pt3{
+	animation: point 3s infinite 1.4s;
+}
+@keyframes point {
+	0%{opacity: 0.2;}
+	20%{opacity: 1;}
+	100%{opacity: 0.2;}
+}
 	/*--FIX--*/
 header{
 	padding: 1.5rem;
@@ -159,8 +172,9 @@ i {
 }
 /*HOME ANIMATIONS*/
 
-#home section:hover{
-	font-size :1.5rem;
+#home section:hover .zoom{
+	font-size : 1.5rem;
+	opacity: 0.2;
 	transition: font-size 3s;
 }
 footer a:hover{
