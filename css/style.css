@@ -403,10 +403,14 @@ img {
 @media all and (max-width: 1024px) {
 	header {
 		margin-bottom: 5rem;
+		font-size: 2.5rem;
 	}
 	#home section {
 		margin-left: 2rem;
 		margin-bottom: 2rem;
+	}
+	footer{
+		font-size: 1.5rem;
 	}
 }
 @media all and (max-width: 767px) {
@@ -423,8 +427,10 @@ img {
 	}
 }
 @media all and (max-width: 599px) {
-	
-}
-@media all and (max-width: 380px) {
-	
+	header{
+		font-size: 1.5rem;
+	}
+	footer{
+		font-size: 1rem;
+	}
 }
