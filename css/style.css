@@ -16,9 +16,6 @@ header, .prochainement, footer, header a {
 	align-items: center;
 	width: 100%;
 }
-/*header, footer {
-	width: 100%;
-}*/
 .grid, .prochainement{
 	flex-direction: row;
 }
@@ -44,7 +41,7 @@ span {
 
 	/*--FIX--*/
 header{
-	padding: 1.5rem;
+	/*padding: 1.5rem;*/
 	font-size: 2rem;
 	font-family: "helvetica";
 }
@@ -324,9 +321,19 @@ img {
  	background-color: rgb(60,18,24);
  	transition: width 1s linear, background-color 100ms;
 }
-#chic div.intitule:hover .line {
+#chic div.intitule:hover #start {
  	width: 100%;
- 	background-color: rgb(180,80,100);
+ 	background-color: rgb(216,133,46);
+ 	transition: width 1s linear, background-color 100ms;
+}
+#chic div.intitule:hover #main {
+ 	width: 100%;
+ 	background-color: rgb(165,50,180);
+ 	transition: width 1s linear, background-color 100ms;
+}
+#chic div.intitule:hover #dessert {
+ 	width: 100%;
+ 	background-color: rgb(144,31,233);
  	transition: width 1s linear, background-color 100ms;
 }
 #delice div.intitule:hover .line {
