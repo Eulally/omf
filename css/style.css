@@ -14,7 +14,11 @@ header, .prochainement, footer, header a {
 	background-color: rgb(87, 156, 135);
 	color: rgb(255, 206, 0);
 	align-items: center;
+	width: 100%;
 }
+/*header, footer {
+	width: 100%;
+}*/
 .grid, .prochainement{
 	flex-direction: row;
 }
@@ -37,20 +41,7 @@ a {
 span {
 	padding-left: 0.7rem;
 }
-#pt1{
-	animation: point 2s infinite 1s;
-}
-#pt2{
-	animation: point 2s infinite 1.2s;
-}
-#pt3{
-	animation: point 2s infinite 1.4s;
-}
-@keyframes point {
-	0%{opacity: 0.2;}
-	20%{opacity: 1;}
-	100%{opacity: 0.2;}
-}
+
 	/*--FIX--*/
 header{
 	padding: 1.5rem;
@@ -94,7 +85,7 @@ h2{
 	box-shadow: 0px 0px 10px lightgrey;
 	justify-content: center;
 	cursor: pointer;
-	transition: font-size 2s;
+	overflow: hidden;
 }
 .menu_note, .menu_delice {
 	margin-right: 1.2rem;
@@ -106,6 +97,9 @@ h2{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	opacity: 1;
+	transform: scale(1);
+	transition: transform 3s, opacity 3s;
 }
         
 		/*--NOTE--*/
@@ -128,10 +122,12 @@ i {
 	color: rgb(60,18,24);
 }
 		/*--CHIC--*/
+		
 .menu_chic, #chic .menu {
 	background-color: #FFF5FE;
 }
 .menu_chic h2, #chic .restaurant_start h2{
+	font-size: 1.3rem;
 	font-family: "croissantone";
 	background: -webkit-gradient(linear, left top, right bottom, from(rgb(216,133,46)), to(rgb(144,91,253)));
     -webkit-background-clip: text;
@@ -173,9 +169,22 @@ i {
 /*HOME ANIMATIONS*/
 
 #home section:hover .zoom{
-	font-size : 1.5rem;
+	transform: scale(1.2);
 	opacity: 0.2;
-	transition: font-size 3s;
+}
+#pt1{
+	animation: point 2s infinite 1s;
+}
+#pt2{
+	animation: point 2s infinite 1.3s;
+}
+#pt3{
+	animation: point 2s infinite 1.6s;
+}
+@keyframes point {
+	0%{opacity: 0.2;}
+	20%{opacity: 1;}
+	100%{opacity: 0.2;}
 }
 footer a:hover{
 	animation: wiggle 400ms;
@@ -378,4 +387,33 @@ img {
 	url("../font/pax2b.woff") format("woff"),
 	url("../font/pax2b.otf") format("opentype"),
 	url("../font/pax2b.svg") format("svg");
+}
+/*responsive*/
+@media all and (max-width: 1024px) {
+	header {
+		margin-bottom: 5rem;
+	}
+	#home section {
+		margin-left: 2rem;
+		margin-bottom: 2rem;
+	}
+}
+@media all and (max-width: 767px) {
+	header {
+		margin-bottom: 3rem;
+	}
+	.grid {
+		flex-direction: column;
+		margin: auto;
+	}
+	#home section {
+		margin : auto;
+		margin-bottom: 2rem;
+	}
+}
+@media all and (max-width: 599px) {
+	
+}
+@media all and (max-width: 380px) {
+	
 }
