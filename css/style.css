@@ -41,7 +41,7 @@ span {
 
 	/*--FIX--*/
 header{
-	/*padding: 1.5rem;*/
+	padding: 1.5rem 0rem;
 	font-size: 2rem;
 	font-family: "helvetica";
 }
@@ -436,6 +436,10 @@ img {
 @media all and (max-width: 599px) {
 	header{
 		font-size: 1.5rem;
+	}
+	#home section {
+		width: 90%;
+		height: 250px;
 	}
 	footer{
 		font-size: 1rem;
