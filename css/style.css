@@ -444,4 +444,13 @@ img {
 	footer{
 		font-size: 1rem;
 	}
+	#note .menu{
+		font-size: 0.5rem;
+		width: 70%;
+		padding: 0rem;
+
+	}
+	img {
+		display: none;
+	}
 }
