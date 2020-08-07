@@ -227,7 +227,6 @@ footer a:hover{
 	padding: 6rem 8rem 10rem 8rem;
 }
 .restaurant_start h2{
-	font-size: 2rem;
 	flex-direction: column;
 	padding-bottom: 1rem;
 }
@@ -416,6 +415,9 @@ img {
 		margin-left: 2rem;
 		margin-bottom: 2rem;
 	}
+	#note .menu, #chic .menu, #delice .menu, #palette .menu {
+		padding: 2rem 2rem 5rem 2rem;
+	}
 	footer{
 		font-size: 1.5rem;
 	}
@@ -434,21 +436,39 @@ img {
 	}
 }
 @media all and (max-width: 599px) {
-	header{
+	header, #chic .restaurant_start h2{
 		font-size: 1.5rem;
 	}
 	#home section {
 		width: 90%;
 		height: 250px;
 	}
-	footer{
+	.intro {
+		margin-top: 1rem,
+	}
+	footer, #note .menu_intitule h3, .menu_intitule h3{
 		font-size: 1rem;
 	}
-	#note .menu{
-		font-size: 0.5rem;
-		width: 70%;
+	.menu_intitule, .menu_details {
+		display: block;
 		padding: 0rem;
-
+	}
+	.menu_intitule, .restaurant_start h2, #note i {
+		padding-top: 1rem;
+	}
+	#note .menu, #chic .menu, #delice .menu, #palette .menu{
+		font-size: 0.5rem;
+		width: 90%;
+		padding: 0rem;
+	}
+	.menu_details {
+		line-height: 1rem;
+	}
+	.details_prix, .menu_details {
+		font-size: 0.8rem;
+	}
+	#note .restaurant_start h2, .restaurant_end h2, #delice .restaurant_start h2, #palette .restaurant_start h2, #note i {
+		font-size: 2rem
 	}
 	img {
 		display: none;
