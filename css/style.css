@@ -112,7 +112,6 @@ i {
 .menu_note h2, #note .restaurant_start h2, #note .restaurant_end h2{
 	font-family: "devonshire";
 	color: rgb(60,18,24);
-	transition-property: zoom;
 	transition-duration: 5s;
 }
 .menu_note h3{
@@ -311,7 +310,7 @@ img {
 .line{
 	width: 0rem;
 	height: 0.2rem;
-	background-color:none;
+	background-color: transparent;
 	position: relative;
  	transition: width 1s linear, background-color 1s;
 }
@@ -416,7 +415,11 @@ img {
 		margin-bottom: 2rem;
 	}
 	#note .menu, #chic .menu, #delice .menu, #palette .menu {
-		padding: 2rem 2rem 5rem 2rem;
+		padding: 0rem 2rem;
+	}
+	.menu{
+		min-height: 70vh;
+		max-width: 85%;
 	}
 	footer{
 		font-size: 1.5rem;
@@ -444,7 +447,7 @@ img {
 		height: 250px;
 	}
 	.intro {
-		margin-top: 1rem,
+		margin-top: 1rem;
 	}
 	footer, #note .menu_intitule h3, .menu_intitule h3{
 		font-size: 1rem;
