@@ -223,7 +223,7 @@ footer a:hover{
 	margin: 0rem;
 }
 #chic .menu, #delice .menu, #palette .menu {
-	padding: 6rem 8rem 10rem 8rem;
+	padding: 4rem 8rem 10rem 8rem;
 }
 .restaurant_start h2{
 	flex-direction: column;
@@ -239,10 +239,15 @@ footer a:hover{
 .menu_intitule h3{
 	margin: 0rem;
 }
+img {
+	width: 18rem;
+	height: 0.5rem;
+}
 .menu_details {
 	font-size: 0.9rem;
 	display: flex;
 	flex-direction: row;
+	text-align: left;
 	justify-content: space-between;
 	line-height: 0.5rem;
 	padding: 0rem 6rem;
@@ -268,11 +273,6 @@ footer a:hover{
 }
 #note .menu h3 {
 	font-size: 1.5rem;
-}
-
-img {
-	width: 18rem;
-	height: 0.5rem;
 }
 .restaurant_end{
 	flex-direction: row;
@@ -405,9 +405,9 @@ img {
 	url("../font/pax2b.svg") format("svg");
 }
 /*responsive*/
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1139px) {
 	header {
-		margin-bottom: 5rem;
+		/*margin-bottom: 3rem;*/
 		font-size: 2.5rem;
 	}
 	#home section {
@@ -415,9 +415,7 @@ img {
 		margin-bottom: 2rem;
 	}
 	#note .menu, #chic .menu, #delice .menu, #palette .menu {
-		padding: 0rem 2rem;
-	}
-	.menu{
+		padding: 4rem 2rem;
 		min-height: 70vh;
 		max-width: 85%;
 	}
@@ -425,7 +423,7 @@ img {
 		font-size: 1.5rem;
 	}
 }
-@media all and (max-width: 767px) {
+@media all and (max-width: 920px) {
 	header {
 		margin-bottom: 3rem;
 	}
@@ -437,14 +435,21 @@ img {
 		margin : auto;
 		margin-bottom: 2rem;
 	}
+	img {
+		width: 13rem;
+		height: 0.5rem;
+	}
+	.menu_details {
+		line-height: 1rem;
+	}
 }
-@media all and (max-width: 599px) {
+@media all and (max-width: 629px) {
 	header, #chic .restaurant_start h2{
 		font-size: 1.5rem;
 	}
 	#home section {
 		width: 90%;
-		height: 250px;
+		height: 60vh;
 	}
 	.intro {
 		margin-top: 1rem;
@@ -466,6 +471,7 @@ img {
 	}
 	.menu_details {
 		line-height: 1rem;
+		text-align: center;
 	}
 	.details_prix, .menu_details {
 		font-size: 0.8rem;
