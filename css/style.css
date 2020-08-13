@@ -476,8 +476,12 @@ img {
 	.details_prix, .menu_details {
 		font-size: 0.8rem;
 	}
-	#note .restaurant_start h2, .restaurant_end h2, #delice .restaurant_start h2, #palette .restaurant_start h2, #note i {
+	#note .restaurant_start h2, .restaurant_end h2, #delice .restaurant_start h2, #palette .restaurant_start h2, #note i{
 		font-size: 2rem
+	}
+	.restaurant_end i {
+		font-size: 2.2rem;
+		padding-bottom: 0.6rem;
 	}
 	img {
 		display: none;
